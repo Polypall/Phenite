@@ -230,7 +230,7 @@
   }
   .sec-head p{color:var(--muted);margin-top:18px;font-size:1.08rem}
 
-  .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
   .card{
     position:relative;background:var(--paper);border:1px solid var(--line);
     border-radius:20px;padding:30px 32px 34px;overflow:hidden;
@@ -259,6 +259,13 @@
   .tag{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.13em;padding:.42em .85em;border-radius:100px}
   .tag-beta{background:var(--yellow);color:var(--ink)}
   .tag-soon{background:var(--purple-soft);color:var(--purple)}
+  .tag-waitlist{background:var(--blue-soft);color:var(--blue-deep)}
+  .card.techconnect::before{background:var(--yellow)}
+  .card.techconnect:hover{border-color:var(--yellow-soft)}
+  .card.techconnect .card-num{color:var(--yellow)}
+  .card.techconnect .card-media{background:radial-gradient(circle at 50% 40%,#FFFBE8,var(--yellow-soft))}
+  .techconnect-media{display:flex;align-items:center;justify-content:center;gap:8px;padding:0 12px}
+  .tc-thumb{height:90px;width:auto;max-width:80px;object-fit:cover;border-radius:8px;border:1px solid rgba(0,0,0,.06);box-shadow:0 2px 8px rgba(0,0,0,.1)}
 
   .card-cat{font-size:.82rem;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:var(--muted)}
   .card h3{font-family:"Fraunces",serif;font-weight:600;font-size:clamp(1.7rem,3vw,2.2rem);letter-spacing:-.015em;margin:6px 0 16px}
@@ -461,6 +468,25 @@
           <div class="card-actions">
             <a href="https://exitusadvisor.org" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Open the app <span class="arr">&rarr;</span></a>
             <a href="https://polypall.github.io/ExitUsSignUp/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Join the beta</a>
+          </div>
+        </article>
+
+        <!-- Tech Connect -->
+        <article class="card techconnect reveal">
+          <div class="card-media techconnect-media">
+            <img src="https://i.postimg.cc/MZy80rLw/IMG-20260225-132831139-HDR.jpg" alt="Tech Connect preview 1" class="tc-thumb">
+            <img src="https://i.postimg.cc/Df4gJ98y/IMG-20260223-190501580.jpg" alt="Tech Connect preview 2" class="tc-thumb">
+            <img src="https://i.postimg.cc/Z55v3NVv/1-log-in-sign-up.png" alt="Tech Connect preview 3" class="tc-thumb">
+          </div>
+          <div class="card-top">
+            <span class="card-num">03</span>
+            <span class="tag tag-waitlist">Waitlist</span>
+          </div>
+          <span class="card-cat">Inventory management</span>
+          <h3>Tech Connect</h3>
+          <p>An inventory web app built for small businesses and independent operators. Join the waitlist to be first in line when we open the doors.</p>
+          <div class="card-actions">
+            <a href="https://polypall.github.io/inventorySignUp/" target="_blank" rel="noopener noreferrer" class="btn btn-yellow">Join the waitlist <span class="arr">&rarr;</span></a>
           </div>
         </article>
 
