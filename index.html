@@ -230,7 +230,7 @@
   }
   .sec-head p{color:var(--muted);margin-top:18px;font-size:1.08rem}
 
-  .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
   .card{
     position:relative;background:var(--paper);border:1px solid var(--line);
     border-radius:20px;padding:30px 32px 34px;overflow:hidden;
@@ -260,6 +260,9 @@
   .tag-beta{background:var(--yellow);color:var(--ink)}
   .tag-soon{background:var(--purple-soft);color:var(--purple)}
   .tag-waitlist{background:var(--blue-soft);color:var(--blue-deep)}
+  .card.indicolite::before{background:#2a7fa0}
+  .card.indicolite:hover{border-color:#a8d4e0}
+  .card.indicolite .card-num{color:#2a7fa0}
   .card.techconnect::before{background:var(--yellow)}
   .card.techconnect:hover{border-color:var(--yellow-soft)}
   .card.techconnect .card-num{color:var(--yellow)}
@@ -489,6 +492,37 @@
           <div class="card-actions">
             <a href="https://exitusadvisor.org" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Open the app <span class="arr">&rarr;</span></a>
             <a href="https://polypall.github.io/ExitUsSignUp/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Join the beta</a>
+          </div>
+        </article>
+
+        <!-- Indicolite -->
+        <article class="card indicolite reveal">
+          <div class="card-media" style="background:radial-gradient(circle at 50% 40%,#e8f4f8,#c8e8f0)">
+            <svg viewBox="0 0 80 60" width="120" aria-hidden="true" style="opacity:.85">
+              <rect x="4" y="4" width="72" height="52" rx="6" fill="none" stroke="#2a7fa0" stroke-width="2"/>
+              <rect x="4" y="4" width="72" height="14" rx="6" fill="#2a7fa0" opacity=".15"/>
+              <circle cx="13" cy="11" r="2.5" fill="#e05c5c"/>
+              <circle cx="22" cy="11" r="2.5" fill="#f0b429"/>
+              <circle cx="31" cy="11" r="2.5" fill="#4caf7d"/>
+              <rect x="12" y="24" width="18" height="2.5" rx="1.2" fill="#2a7fa0" opacity=".5"/>
+              <rect x="12" y="30" width="28" height="2.5" rx="1.2" fill="#2a7fa0" opacity=".3"/>
+              <rect x="12" y="36" width="22" height="2.5" rx="1.2" fill="#2a7fa0" opacity=".4"/>
+              <rect x="12" y="42" width="16" height="2.5" rx="1.2" fill="#2a7fa0" opacity=".25"/>
+              <rect x="46" y="22" width="22" height="28" rx="3" fill="#2a7fa0" opacity=".1" stroke="#2a7fa0" stroke-width="1"/>
+              <rect x="49" y="26" width="8" height="2" rx="1" fill="#2a7fa0" opacity=".4"/>
+              <rect x="49" y="31" width="14" height="2" rx="1" fill="#2a7fa0" opacity=".3"/>
+              <rect x="49" y="36" width="10" height="2" rx="1" fill="#2a7fa0" opacity=".35"/>
+            </svg>
+          </div>
+          <div class="card-top">
+            <span class="card-num">03</span>
+            <span class="tag tag-beta">Now in beta</span>
+          </div>
+          <span class="card-cat">Developer tools</span>
+          <h3>Indicolite</h3>
+          <p>A browser-based IDE built for developers who want to code anywhere, without setup. Write, run, and share code straight from your browser.</p>
+          <div class="card-actions">
+            <a href="https://indicolite.onrender.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Open the IDE <span class="arr">&rarr;</span></a>
           </div>
         </article>
 
